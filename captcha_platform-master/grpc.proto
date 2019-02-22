@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+service Predict {
+    rpc predict (PredictRequest) returns (PredictResult) {}
+}
+
+message PredictRequest {
+    string image = 1;
+    string split_char = 2;
+    string model_name = 3;
+    string model_type = 4;
+    string model_site = 5;
+    string need_color = 6;
+}
+
+message PredictResult {
+    string result = 1;
+    int32 code = 2;
+    bool success = 3;
+}
