@@ -1,0 +1,2 @@
+# bilibili-captcha
+训练好的bilibili图形验证码模型以及tensorflow1.10.0无avx指令集的编译结果
